@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
             var myEditor = sharedP?.edit()
             myEditor?.putString("product_name", edtProduct.text.toString())
             myEditor?.commit()
+            Toast.makeText(this@MainActivity,"Saved",Toast.LENGTH_SHORT).show()
 
         }
 

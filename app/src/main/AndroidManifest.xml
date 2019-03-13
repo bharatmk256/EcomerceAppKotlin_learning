@@ -12,12 +12,16 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
-        <activity android:name=".ShowAllJSONObjectsActivity">
+        <activity android:name=".RVActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".DownloadingImageAcitvity">
+        </activity>
+        <activity android:name=".ShowAllJSONObjectsActivity">
         </activity>
         <activity android:name=".ShowJsonObjectActivity">
         </activity>
